@@ -41,12 +41,12 @@ export function Footer() {
 						<div className="mb-4 flex items-center justify-start gap-2">
 							<Image
 								src={DEFAULT_LOGO_URL}
-								alt="OpenCut"
+								alt="SocratHub"
 								width={24}
 								height={24}
-								className="invert dark:invert-0"
+								className="object-contain"
 							/>
-							<span className="text-lg font-bold">OpenCut</span>
+							<span className="text-lg font-bold">Socrat Studio</span>
 						</div>
 						<p className="text-muted-foreground mb-5 text-sm md:text-left">
 							The privacy-first video editor that feels simple to use.

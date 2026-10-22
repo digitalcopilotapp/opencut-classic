@@ -1,13 +1,13 @@
 export const SITE_URL = "https://opencut.app";
 
 export const SITE_INFO = {
-	title: "OpenCut",
+	title: "Socrat Studio",
 	description:
-		"A simple but powerful video editor that gets the job done. In your browser.",
+		"Editor de vídeo do Socrat Studio, baseado no OpenCut Classic.",
 	url: SITE_URL,
 	openGraphImage: "/open-graph/default.jpg",
 	twitterImage: "/open-graph/default.jpg",
-	favicon: "/favicon.ico",
+	favicon: "/socrathub-owl.png",
 };
 
-export const DEFAULT_LOGO_URL = "/logos/opencut/svg/logo.svg";
+export const DEFAULT_LOGO_URL = "/socrathub-owl.png";

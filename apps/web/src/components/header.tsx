@@ -8,10 +8,8 @@ import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { ThemeToggle } from "./theme-toggle";
 import {
-	Copy01Icon,
 	Download01Icon,
 	GithubIcon,
-	LinkSquare02Icon,
 	Menu02Icon,
 } from "@hugeicons/core-free-icons";
 import { HugeiconsIcon } from "@hugeicons/react";
@@ -57,8 +55,8 @@ export function Header() {
 							<Link href="/" className="flex items-center gap-3">
 								<Image
 									src={DEFAULT_LOGO_URL}
-									alt="OpenCut Logo"
-									className="invert dark:invert-0"
+									alt="SocratHub"
+									className="object-contain"
 									width={32}
 									height={32}
 								/>
@@ -66,32 +64,16 @@ export function Header() {
 						</ContextMenuTrigger>
 						<ContextMenuContent>
 							<ContextMenuItem
-								onClick={async () => {
-									const res = await fetch(DEFAULT_LOGO_URL);
-									const svg = await res.text();
-									await navigator.clipboard.writeText(svg);
-								}}
-							>
-								<HugeiconsIcon icon={Copy01Icon} />
-								Copy SVG
-							</ContextMenuItem>
-							<ContextMenuItem
 								onClick={() => {
 									const a = document.createElement("a");
 									a.href = DEFAULT_LOGO_URL;
-									a.download = "opencut-logo.svg";
+									a.download = "socrathub-owl.png";
 									a.click();
 								}}
 							>
 								<HugeiconsIcon icon={Download01Icon} />
-								Download SVG
+								Download SocratHub logo
 							</ContextMenuItem>
-							<Link href="/brand">
-								<ContextMenuItem>
-									<HugeiconsIcon icon={LinkSquare02Icon} />
-									Brand assets
-								</ContextMenuItem>
-							</Link>
 						</ContextMenuContent>
 					</ContextMenu>
 
